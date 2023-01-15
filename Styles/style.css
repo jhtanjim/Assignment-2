@@ -445,8 +445,38 @@ a:hover {
 
 }
 
+/* responsive */
+
 @media only screen and (max-width:688px) {
 
+    /* header
+
+*/
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    nav li {
+        list-style: none;
+        text-decoration: none;
+        color: #131313;
+        padding-right: 10px;
+
+    }
+
+    .banner-image {
+        display: none;
+    }
 
     /* about */
     .container {
