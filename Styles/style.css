@@ -37,7 +37,20 @@ nav ul {
 nav li {
     list-style: none;
     margin-left: 50px;
+    text-decoration: none;
+    color: #131313;
 
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #FF900E;
+    font-weight: 600;
 }
 
 
@@ -77,6 +90,11 @@ nav li {
     color: #FFFFFF;
     border: 0;
     border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: royalblue;
+    color: whitesmoke;
 }
 
 /* banner image */
@@ -264,7 +282,7 @@ nav li {
 }
 
 .experience {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 25px;
     line-height: 40px;
 
@@ -275,11 +293,23 @@ nav li {
 }
 
 /* ?services */
+
+.service:hover {
+    background-color: antiquewhite;
+    color: rgb(15, 129, 129);
+
+}
+
 .services {
     justify-content: center;
     padding-left: 170px;
     margin-bottom: 180px;
 }
+
+.services :hover {
+    color: rgb(15, 129, 129);
+}
+
 
 .services-information {
     padding-left: 170px;
@@ -415,7 +445,290 @@ nav li {
 
 }
 
+@media only screen and (max-width:688px) {
 
+
+    /* about */
+    .container {
+        margin-bottom: 130px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        gap: 24px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .about-info {
+        /* padding-left: 73px; */
+        text-align: center;
+    }
+
+    .about-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .thumbnail {
+        width: 342px;
+        height: 342px;
+        border-radius: 8px;
+    }
+
+
+    .about-title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 53px;
+        color: #727272;
+        margin-bottom: 24px;
+    }
+
+    .about-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+
+        /* Dark 03 */
+
+        color: #727272;
+        margin-bottom: 32px;
+    }
+
+    .of-Our {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 53px;
+
+        /* Dark 01 */
+
+        color: #131313;
+
+    }
+
+    .title-Features {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 53px;
+
+        color: #FF900E;
+
+    }
+
+    .btn-primary {
+        width: 180px;
+        height: 64px;
+        font-weight: 600;
+        font-size: 20px;
+        background-color: #FF900E;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 8px;
+    }
+
+    /* about end */
+
+    /* feature start */
+    .feature-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 146px;
+        justify-content: center;
+        /* margin-right: 241px; */
+        margin-bottom: 122.85px;
+    }
+
+    .feature-info-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 600px;
+        gap: 26px;
+    }
+
+    .feature-line {
+        width: 5px;
+        height: 106px;
+        background: #FF900E;
+    }
+
+    .feature-title {
+        font-weight: 700;
+        font-size: 25px;
+        color: #131313;
+    }
+
+    .feature-image {
+        width: 100%;
+        height: 200px;
+        padding-left: 300px;
+
+    }
+
+    .features-info {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 26px;
+
+
+        color: #727272;
+        margin-top: 24px;
+        margin-bottom: 30px;
+
+    }
+
+    /* version */
+    .version {
+        width: 586px;
+        height: 171px;
+        /* left: 234px;
+        top: 2541px; */
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        /* padding-left: 40px; */
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .version-container {
+        /* padding-left: 100px; */
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .version-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: #131313;
+        padding-bottom: 20px;
+    }
+
+    .version-info {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 30px;
+        color: #727272;
+    }
+
+
+
+
+    .feature-btn-primary {
+        position: absolute;
+        width: 342px;
+        height: 200px;
+        left: 500px;
+        top: 3200px;
+        border: 0;
+        background: #FF900E;
+        border-radius: 8px;
+
+    }
+
+    /* .feature-image .feature-btn-primary {
+        z-index: 1;
+    } */
+
+    .ten-year {
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 70px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    .experience {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 40px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    /* feature end */
+
+    /* service start */
+    .all-services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services {
+        justify-content: center;
+        /* padding-left: 170px; */
+        margin-bottom: 180px;
+        margin-right: 170px;
+    }
+
+    .services-information {
+        /* padding-left: 170px; */
+        margin-bottom: 100px;
+    }
+
+    .service-title {
+        font-weight: 700;
+        font-size: 25px;
+        color: #131313;
+    }
+
+    .service-info {
+        /* width: 1098px;
+        height: 124px; */
+        /* left: 228px;
+        top: 3517px; */
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+
+
+        color: #727272;
+        margin-top: 24px;
+        margin-bottom: 22px;
+
+
+    }
+
+
+    /* sponsor */
+    .sponsor {
+        text-align: center;
+        margin-bottom: 130px;
+        padding-left: 10px;
+    }
+
+    .sponsor-logo {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 155px; */
+    }
+
+
+    .sponsor-info {
+        font-size: 16px;
+        color: #727272;
+        padding-left: 10px;
+    }
+
+    /* footer */
+    .footer {
+        width: 100%;
+        align-items: center;
+        margin-right: 900px;
+    }
+
+}
 
 /* .hide {
     display: none;
